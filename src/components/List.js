@@ -4,6 +4,7 @@ import Card from "./Card";
 
 export default function List() {
     const [list, setList] = useState([]);
+    console.log(list);
 
     useEffect(() => {
         axios.get('https://api.nasa.gov/planetary/apod?api_key=H7Kr6ax7MitbwIjpJrPMKqgj3WWhgKnlhitSkoeU')
@@ -19,11 +20,7 @@ export default function List() {
     return (
         <div className="listCont">
             <Card
-                // key={i}
-                title={list.title}
-                src={list.url}
-                explanation={list.explanation}
-                date={list.date}
+                list={list}
             />
         </div>
     );
