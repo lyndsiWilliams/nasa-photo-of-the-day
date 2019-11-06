@@ -1,13 +1,12 @@
 import React from "react";
+import List from "./components/List";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <h1>Spacey Introduction!</h1>
+      <List />
     </div>
   );
 }
