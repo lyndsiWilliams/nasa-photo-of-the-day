@@ -5,9 +5,9 @@ const Footer = props => {
 
     return (
         <div>
-            <button className="serVer" onClick={() => alert(props.list.service_version)}>Server Version</button> {/* ser_ver */}
+            <button onClick={() => alert(props.list.service_version)}>Server Version</button> {/* ser_ver */}
             <button onClick={() => alert("HD/SD switch!")}>Want to see it in HD?</button> {/* switch src between url and hdurl */}
-            <button className="medType" onClick={() => alert(props.list.media_type)}>Media Type</button> {/* med_type */}
+            <button onClick={() => alert(props.list.media_type)}>Media Type</button> {/* med_type */}
         </div>
     );
 };
