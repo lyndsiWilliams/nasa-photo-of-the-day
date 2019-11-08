@@ -1,12 +1,21 @@
 import React from "react";
+import { Jumbotron } from 'reactstrap';
 import List from "./components/List";
-import "./App.css";
+import { bold } from "ansi-colors";
+// import "./App.css";
 
 function App() {
-
+  
   return (
     <div className="App">
-      <h1>Spacey Introduction!</h1>
+      <Jumbotron body inverse style={{
+                backgroundColor: '#D8BFD8',
+                textAlign: 'center',
+                fontSize: '3rem',
+                fontWeight: 'bold'
+                }}>
+                Spacey Introduction!
+      </Jumbotron>
       <List />
     </div>
   );

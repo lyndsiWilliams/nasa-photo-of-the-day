@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Card from "./Card";
-import Footer from "./Footer";
+import PlanetCard from "./PlanetCard";
 
 export default function List() {
     const [list, setList] = useState([]);
@@ -20,8 +19,7 @@ export default function List() {
     
     return (
         <div className="listCont">
-            <Card list={list} />
-            <Footer list={list} />
+            <PlanetCard list={list} />
         </div>
     );
 }
