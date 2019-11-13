@@ -1,13 +1,22 @@
 import React from "react";
-import "./App.css";
+import { Jumbotron } from 'reactstrap';
+import List from "./components/List";
+import { bold } from "ansi-colors";
+// import "./App.css";
 
 function App() {
+  
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <Jumbotron body inverse style={{
+                backgroundColor: '#D8BFD8',
+                textAlign: 'center',
+                fontSize: '3rem',
+                fontWeight: 'bold'
+                }}>
+                Spacey Introduction!
+      </Jumbotron>
+      <List />
     </div>
   );
 }
